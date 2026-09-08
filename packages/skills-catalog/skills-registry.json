@@ -1205,18 +1205,6 @@
       "contentHash": "3b940bcd8ad2035177bffb04e34d52fe038f669a2d466e8d67e73135044373a5"
     },
     {
-      "name": "pr-review",
-      "description": "Reviews a GitHub pull request and posts inline comments plus one consolidated summary, adapting to any codebase by discovering the project's own test runner, requirement specs, and architecture conventions before running six specialized review agents in parallel. Stack-agnostic across language and framework; targets GitHub PRs via the gh CLI. Use when the user says \"review PR 128\", \"review this PR\", \"code review this PR\", or \"check this pull request\". Do NOT use for creating PRs or responding to review comments (use gh-address-comments), or debugging failing CI checks (use gh-fix-ci).",
-      "category": "quality",
-      "path": "(quality)/pr-review",
-      "files": [
-        "SKILL.md"
-      ],
-      "author": "github.com/augusto-dmh",
-      "version": "1.0.0",
-      "contentHash": "c816839b2d787a3edfe6e7efe5604978218add52e570476b6df8d4242d8c127c"
-    },
-    {
       "name": "rails-dev",
       "description": "Opinionated Rails conventions: rich models, concerns, CRUD-everything, state-as-records, minimal dependencies, Minitest with fixtures. Load this skill BEFORE any code-level thinking, not only before editing a file. It is required the moment a task touches Rails code in ANY way: designing or even just discussing a data model, schema, migration, entity, association, field, validation, class, or method name; writing, planning, reviewing, analyzing, testing, debugging, or refactoring; or proposing any model, table, column, route, or code snippet inline in chat. If you are about to name a model or sketch a column you are already in scope, even in an exploratory back-and-forth where no file is written yet. Do not let a \\\"we're just discussing\\\" framing defer it. Do NOT use for non-Rails backends, NestJS, or general architecture (use nestjs-modular-monolith or coding-guidelines).",
       "category": "development",
@@ -1613,6 +1601,23 @@
       "contentHash": "4468f89ea05bfdea7a9346bebae5358bcf80ff4a51e6f59195b7312186fe0718"
     },
     {
+      "name": "the-judge",
+      "description": "Evidence-first pull request judge that reviews a PR and posts one consolidated GitHub review with inline comments via the gh CLI. Runs the repo's own deterministic checks first, researches current official docs before any claim about external libraries or APIs, then reviews correctness, security, structural quality (code judo, spaghetti growth, file-size limits), and AI slop including useless code comments. Every finding must carry evidence, every comment passes a deterministic noise gate before posting, and the verdict (APPROVE, COMMENT, REQUEST_CHANGES) is weighed by findings. Use when asked to review a PR, judge this PR, review this branch or diff before merge, run the-judge, \"revise esse PR\", \"faca o code review\", or \"julgue esse PR\". Do NOT use for reviewing prose or documents, fixing CI failures, resolving merge conflicts, writing the fix itself, or responding to review comments (use gh-address-comments).",
+      "category": "quality",
+      "path": "(quality)/the-judge",
+      "files": [
+        "SKILL.md",
+        "references/comment-voice.md",
+        "references/review-standards.md",
+        "scripts/post_review.py",
+        "scripts/review_gate.py",
+        "scripts/scan_bypasses.py"
+      ],
+      "author": "Felipe Rodrigues - github.com/felipfr",
+      "version": "1.4.0",
+      "contentHash": "05526209052f6592ad98476e8f59e9ffa2a24e803e10a90ceac659476b509403"
+    },
+    {
       "name": "the-jury",
       "description": "Use when a question, decision, plan, tradeoff, or claim needs a rigorous verdict and one perspective is not enough. Spawns a panel of 3 to 5 subagent jurors that form independent blind opinions, deliberate anonymously under an anti-anchoring and anti-sycophancy protocol, and return one committed verdict with confidence, preserved dissent, and a concrete next action. Domain-agnostic across engineering, architecture, data, product, hiring, strategy, vendor choice, build-vs-buy, and research design. Trigger phrases include \"convene a jury\", \"have agents debate and decide\", \"get a panel to decide\", \"multi-agent decision\", \"stress-test this and decide\", \"monte um juri\", \"tribunal de agentes\", \"painel para decidir\". Do NOT use to only critique without deciding (use the-fool for that), to build a plan or write the solution itself, or for simple factual lookups.",
       "category": "decision-making",
@@ -1770,6 +1775,13 @@
       "message": "megabrain was a temporary name for tlc-spec-driven v3. Use tlc-spec-driven instead.",
       "alternatives": [
         "tlc-spec-driven"
+      ]
+    },
+    {
+      "name": "pr-review",
+      "message": "Use the-judge instead. pr-review was an adaptive multi-agent PR review orchestrator; the-judge is the evidence-gated replacement.",
+      "alternatives": [
+        "the-judge"
       ]
     }
   ]
