@@ -1,3 +1,13 @@
+## 0.17.5 (2026-09-08)
+
+### 🚀 Features
+
+- **skills-catalog:** add the-judge evidence-first PR review skill ([7807faaf0](https://github.com/tech-leads-club/agent-skills/commit/7807faaf0))
+
+### ❤️ Thank You
+
+- felipfr
+
 ## 0.17.4 (2026-08-28)
 
 ### 🚀 Features
