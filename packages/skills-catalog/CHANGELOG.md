@@ -1,3 +1,20 @@
+## 0.17.6 (2026-09-09)
+
+### 🚀 Features
+
+- **skills-catalog:** add tlc-implement for checklist-driven verified builds ([39b1b95de](https://github.com/tech-leads-club/agent-skills/commit/39b1b95de))
+- **skills-catalog:** add tlc-plan for cutting decided work into tasks ([f68d2e5df](https://github.com/tech-leads-club/agent-skills/commit/f68d2e5df))
+- **skills-catalog:** add tlc-discover for problem-first design decisions ([f9cc3808b](https://github.com/tech-leads-club/agent-skills/commit/f9cc3808b))
+
+### 🩹 Fixes
+
+- **skills-catalog:** make tlc-implement handoff default consistent ([303339395](https://github.com/tech-leads-club/agent-skills/commit/303339395))
+- **skills-catalog:** lead tlc-implement description with planned work ([a319da79c](https://github.com/tech-leads-club/agent-skills/commit/a319da79c))
+
+### ❤️ Thank You
+
+- Waldemar Neto @waldemarnt
+
 ## 0.17.5 (2026-09-08)
 
 ### 🚀 Features
