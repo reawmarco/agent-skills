@@ -1,3 +1,18 @@
+## 0.17.7 (2026-09-09)
+
+### 🚀 Features
+
+- **skills-catalog:** add tlc-spec-lean for modern-model spec work ([b27db8a13](https://github.com/tech-leads-club/agent-skills/commit/b27db8a13))
+
+### 🩹 Fixes
+
+- **skills-catalog:** point tlc-spec-lean lessons grounding at verification.md ([7fa49b2ab](https://github.com/tech-leads-club/agent-skills/commit/7fa49b2ab))
+- **skills-catalog:** sharpen tlc-spec-lean description for modern models ([2c83172bb](https://github.com/tech-leads-club/agent-skills/commit/2c83172bb))
+
+### ❤️ Thank You
+
+- Waldemar Neto @waldemarnt
+
 ## 0.17.6 (2026-09-09)
 
 ### 🚀 Features
