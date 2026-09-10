@@ -1,3 +1,13 @@
+## 0.17.8 (2026-09-10)
+
+### 🚀 Features
+
+- **skills-catalog:** add surface walk and Observable landings to tlc-plan ([bfd1c0d3e](https://github.com/tech-leads-club/agent-skills/commit/bfd1c0d3e))
+
+### ❤️ Thank You
+
+- Waldemar Neto @waldemarnt
+
 ## 0.17.7 (2026-09-09)
 
 ### 🚀 Features
